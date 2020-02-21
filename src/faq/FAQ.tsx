@@ -42,6 +42,7 @@ function FAQ() {
   return (
     <React.Fragment>
       <div className="hero">
+        <img src="hero_bg.png" className="bg" />
         <Container className="h-100">
           <Row className="h-100">
             <Col md={12} className="d-flex flex-column justify-content-center">

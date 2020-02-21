@@ -1,5 +1,5 @@
 $primaryColor: #4179db;
-$heroHeight: 350px;
+$heroHeight: 300px;
 
 .topic-title {
   padding: 25px 0;
@@ -10,9 +10,18 @@ $heroHeight: 350px;
 .hero {
   height: $heroHeight;
   position: relative;
-  background: url("/hero_bg.png") no-repeat #fff;
-  background-size: cover;
-  background-position: center;
+  // background: url("hero_bg.png") no-repeat #fff;
+  // background-size: cover;
+  // background-position: center;
+  background: white;
+  overflow: hidden;
+
+  .bg {
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    height: 100%;
+  }
 
   h1 {
     color: $primaryColor;
