@@ -1,0 +1,33 @@
+.question {
+  padding: 10px;
+  cursor: pointer;
+  transform: translate3d(0, 0, 0);
+  border-color: #ddd;
+  position: relative;
+
+  &:hover {
+    background: #eee;
+  }
+
+  .question-title {
+    transition: 0.05s linear all;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.question-body {
+  padding: 15px;
+}
+
+.question.opened {
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+
+  .question-title {
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+}

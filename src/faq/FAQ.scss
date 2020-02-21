@@ -1,0 +1,79 @@
+$primaryColor: #4179db;
+$heroHeight: 350px;
+
+.topic-title {
+  padding: 25px 0;
+  font-size: 25px;
+  color: #777;
+}
+
+.hero {
+  height: $heroHeight;
+  position: relative;
+  background: url("/hero_bg.png") no-repeat #fff;
+  background-size: cover;
+  background-position: center;
+
+  h1 {
+    color: $primaryColor;
+    font-weight: 400;
+    text-shadow: 0px 0px 10px rgba(white, 1);
+  }
+  .searchInput {
+    box-shadow: 0px 3px 15px rgba(black, 0.15);
+    overflow: hidden;
+
+    .form-control {
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+
+  .btn-primary {
+    background-color: $primaryColor;
+  }
+}
+
+.popular .card {
+  padding: 15px;
+  position: relative;
+  padding-left: 120px;
+  text-align: left;
+
+  .card-body {
+    padding: 0;
+  }
+
+  img {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 20px;
+    top: 20px;
+  }
+
+  a {
+    border: none;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+    color: #555;
+  }
+}
+
+.topics-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  z-index: 9000;
+  background: #f7f8fa;
+}
+
+.topics {
+}
+
+.list-group-item.active {
+  color: $primaryColor !important;
+  background: none;
+}
