@@ -1,21 +1,7 @@
 import React, { useState } from "react";
+import { Button, Card, CardDeck, Col, Container, Form, FormControl, InputGroup, ListGroup, Nav, Row } from "react-bootstrap";
 import "./FAQ.scss";
-import {
-  Jumbotron,
-  Form,
-  InputGroup,
-  FormControl,
-  Button,
-  Container,
-  Row,
-  Col,
-  Accordion,
-  Card,
-  CardDeck,
-  ListGroup,
-  Nav
-} from "react-bootstrap";
-import { Topic, ITopic } from "./Topic";
+import { ITopic, Topic } from "./Topic";
 import { TopicsList } from "./topics";
 
 function FAQ() {
@@ -42,7 +28,7 @@ function FAQ() {
   return (
     <React.Fragment>
       <div className="hero">
-        <img src="hero_bg.png" className="bg" />
+        <img src="hero_bg.png" className="bg" alt="background" />
         <Container className="h-100">
           <Row className="h-100">
             <Col md={12} className="d-flex flex-column justify-content-center">
@@ -133,7 +119,7 @@ function FAQ() {
                   questions={topic.questions}
                 />
               ))}
-            {filteredTopics.length == 0 && (
+            {filteredTopics.length === 0 && (
               <span className="text-center">
                 Oh snap! We didn't find an answer to that, wanna try contact us
                 directly?

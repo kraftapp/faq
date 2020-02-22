@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, Accordion, Row, Col, ListGroup } from "react-bootstrap";
-import { Question, IQuestion } from "./Question";
+import { Card, ListGroup } from "react-bootstrap";
+import { IQuestion, Question } from "./Question";
 import "./Topic.scss";
 
 export interface ITopic {
@@ -15,8 +15,8 @@ export const Topic = (props: ITopic) => {
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <ListGroup variant="flush">
-          {props.questions.map(q => (
-            <ListGroup.Item id={q.id} className="p-0">
+          {props.questions.map((q, index) => (
+            <ListGroup.Item id={q.id} className="p-0" key={index}>
               <Question {...q} />
             </ListGroup.Item>
           ))}

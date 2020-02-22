@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Accordion, Row, ListGroup, Collapse } from "react-bootstrap";
+import { Collapse } from "react-bootstrap";
 import "./Question.scss";
 
 export interface IQuestion {

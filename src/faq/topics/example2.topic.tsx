@@ -1,5 +1,3 @@
-import React from "react";
-import { IQuestion } from "../Question";
 import { ITopic } from "../Topic";
 
 export const exampleData2: ITopic = {

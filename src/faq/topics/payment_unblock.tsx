@@ -1,5 +1,4 @@
 import React from "react";
-import { IQuestion } from "../Question";
 import { ITopic } from "../Topic";
 
 export const PaymentUnblockTopic: ITopic = {
@@ -36,6 +35,7 @@ export const PaymentUnblockTopic: ITopic = {
       content: (
         <React.Fragment>
           <img
+            alt="display how the purchase flow works"
             src="https://reno.watch/img/purchase.png"
             className="img-fluid"
           />
