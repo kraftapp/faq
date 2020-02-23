@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Card, CardDeck, Col, Container, Form, FormControl, InputGroup, ListGroup, Nav, Row } from "react-bootstrap";
+import { Button, Card, Col, Container, Form, FormControl, InputGroup, Nav, Row } from "react-bootstrap";
 import "./FAQ.scss";
 import { ITopic, Topic } from "./Topic";
 import { TopicsList } from "./topics";
@@ -37,7 +37,7 @@ function FAQ() {
               <Form.Group controlId="formSearch">
                 <InputGroup className="mb-3 searchInput">
                   <FormControl
-                    placeholder="Ask us a question, or enter some key word"
+                    placeholder="Let us help you to find your answer"
                     aria-label="Search"
                     aria-describedby="basic-search"
                     onChange={inputSearchChanged}
@@ -54,11 +54,14 @@ function FAQ() {
       </div>
 
       <Container>
+
+        {/*
         <Row>
           <Col>
             <h1 className="topic-title">Popular questions</h1>
           </Col>
         </Row>
+
         <Row>
           <Col>
             <CardDeck className="popular mb-4">
@@ -93,36 +96,32 @@ function FAQ() {
             </CardDeck>
           </Col>
         </Row>
+        */}
 
-        <Row>
-          <Col md={4} className="topics-nav">
+        <Row className="mt-4">
+          <Col md={4} className="topics-nav mb-4">
             <Card>
               <Nav className="flex-md-column flex-xs-row">
                 {topics.map(topic => (
-                  <Nav.Link href={"#" + topic.id} key={topic.id}>
+                  <Nav.Link href={`#${topic.id}`} key={topic.id}>
                     {topic.title}
                   </Nav.Link>
                 ))}
               </Nav>
             </Card>
           </Col>
-          <Col
-            md={8}
-            className="topics d-flex flex-column justify-content-center"
-          >
+          <Col md={8} className="topics d-flex flex-column justify-content-center">
             {filteredTopics.length > 0 &&
               filteredTopics.map(topic => (
                 <Topic
                   id={topic.id}
                   key={topic.id}
                   title={topic.title}
-                  questions={topic.questions}
-                />
+                  questions={topic.questions} />
               ))}
             {filteredTopics.length === 0 && (
               <span className="text-center">
-                Oh snap! We didn't find an answer to that, wanna try contact us
-                directly?
+                Oh snap! We didn't find an answer to that. Wanna try <a href="mailto:kr4ftmail@gmail.com">contacting us</a> directly?
               </span>
             )}
           </Col>

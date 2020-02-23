@@ -3,7 +3,6 @@ import { Collapse } from "react-bootstrap";
 import "./Question.scss";
 
 export interface IQuestion {
-  id: string;
   title: string;
   content: any;
   keywords?: string;

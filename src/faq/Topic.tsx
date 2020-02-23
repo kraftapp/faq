@@ -16,7 +16,7 @@ export const Topic = (props: ITopic) => {
         <Card.Title>{props.title}</Card.Title>
         <ListGroup variant="flush">
           {props.questions.map((q, index) => (
-            <ListGroup.Item id={q.id} className="p-0" key={index}>
+            <ListGroup.Item className="p-0" key={index}>
               <Question {...q} />
             </ListGroup.Item>
           ))}

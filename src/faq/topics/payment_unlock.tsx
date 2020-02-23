@@ -2,19 +2,18 @@ import React from "react";
 import { ITopic } from "../Topic";
 
 export const PaymentUnlockTopic: ITopic = {
-  id: "purchase_unblock",
+  id: "purchase_unlock",
   title: "💳 Purchasing & Unlocking",
   questions: [
     {
-      id: "how-do-i-purchase-a-clock-face",
       title: "How do I purchase a clock face?",
       content: (
         <React.Fragment>
           <p>
-            After installing a clock face, a <strong>5-digit code</strong> will pop up on your watch.
+            After installing the clock face, a <strong>5-digit code</strong> will pop up on your watch.
             </p>
           <p>
-            Head to the website shown on your watch <a href="https://kiezelpay.com/code/" target="_blank" rel="noopener noreferrer">(or tap here)</a> and type the code in.
+            Access the website shown on your watch <a href="https://kiezelpay.com/code/" target="_blank" rel="noopener noreferrer">(or click here)</a> and type the code in.
             </p>
           <p>
             Once purchased, the clock face will instantly unlock for you.
@@ -23,12 +22,11 @@ export const PaymentUnlockTopic: ITopic = {
       )
     },
     {
-      id: "how-do-i-purchase-a-bundle",
       title: "How do I purchase a bundle?",
       content: (
         <React.Fragment>
           <p>
-            Bundles are usually a great way of saving money. If a bundle is offered with a clock face, it will probably have a better value for the money.
+            Bundles are usually a great way of saving money. If a bundle is offered with a clock face, it will probably have a better value for money.
             </p>
           <p>
             Not every clock face is part of a bundle, but if the one you are purchasing is you will have the choice to opt in for the bundle during the payment.
@@ -44,7 +42,6 @@ export const PaymentUnlockTopic: ITopic = {
       )
     },
     {
-      id: "i-have-already-paid-do-i-need-to-purchase-again",
       title: "I have already paid, do I need to purchase again?",
       content: (
         <React.Fragment>
@@ -61,8 +58,17 @@ export const PaymentUnlockTopic: ITopic = {
       )
     },
     {
-      id: "im-not-satisfied-with-a-purchase-and-i-want-a-refund",
-      title: "I'm not satisfied with a purchase and I want a refund",
+      title: "How can I find which clock faces do I own?",
+      content: (
+        <React.Fragment>
+          <p>
+            It might be hard to keep track of what clock faces you might own, but luckily you can check it up using the <a href="https://kiezelpay.com/lookup" target="_blank" rel="noopener noreferrer">lookup feature</a>.
+          </p>
+        </React.Fragment>
+      )
+    },
+    {
+      title: "I'm not satisfied with a purchase and I want a refund!",
       content: (
         <React.Fragment>
           <p>
@@ -70,17 +76,6 @@ export const PaymentUnlockTopic: ITopic = {
           </p>
           <p>
             If you are decided you want to request a refund you will need to <a href="https://kiezelpay.com/faq/faq-refund" target="_blank" rel="noopener noreferrer">contact our payment provider</a> and they will handle it for you.
-          </p>
-        </React.Fragment>
-      )
-    },
-    {
-      id: "how-can-i-find-which-clock-faces-do-i-own",
-      title: "How can I find which clock faces do I own?",
-      content: (
-        <React.Fragment>
-          <p>
-            It might be hard to keep track of what clock faces you might own, but luckily you can check it in the <a href="https://kiezelpay.com/lookup" target="_blank" rel="noopener noreferrer">lookup feature</a>.
           </p>
         </React.Fragment>
       )

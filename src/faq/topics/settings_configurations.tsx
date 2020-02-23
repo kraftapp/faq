@@ -1,0 +1,43 @@
+import React from "react";
+import { ITopic } from "../Topic";
+
+export const SettingsConfigurations: ITopic = {
+  id: "settings_configurations",
+  title: "⚙️ Settings & Configurations",
+  questions: [
+    {
+      title: "How can I access the settings page?",
+      content:
+        <React.Fragment>
+          <p>
+            You can access the settings page by following these simple steps:
+          </p>
+          <ul>
+            <li>Open the Fitbit app on your phone;</li>
+            <li>Tap the icon in the top left corner;</li>
+            <li>Select your watch in the list;</li>
+            <li>Select the clockface;</li>
+            <li>Click on <strong>settings</strong>;</li>
+          </ul>
+        </React.Fragment>
+    },
+    {
+      title: "How can I change the temperature from Celsius to Farenheit?",
+      content:
+        <React.Fragment>
+        </React.Fragment>
+    },
+    {
+      title: "How can I display the date in a different format?",
+      content:
+        <React.Fragment>
+        </React.Fragment>
+    },
+    {
+      title: "How can I display the time in a different format?",
+      content:
+        <React.Fragment>
+        </React.Fragment>
+    },
+  ]
+};
