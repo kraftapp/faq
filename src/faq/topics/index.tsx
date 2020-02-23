@@ -1,4 +1,4 @@
-import { PaymentUnblockTopic } from "./payment_unblock";
-import { exampleData2 } from "./example2.topic";
+import { ClockfaceErrors } from "./clock_face_errors";
+import { PaymentUnlockTopic } from "./payment_unlock";
 
-export const TopicsList = [PaymentUnblockTopic, exampleData2];
+export const TopicsList = [PaymentUnlockTopic, ClockfaceErrors];

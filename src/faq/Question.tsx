@@ -15,10 +15,8 @@ export const Question = (props: IQuestion) => {
 
   return (
     <div
-      className={`question ${opened ? "opened" : ""}`}
-      onClick={() => setOpened(!opened)}
-    >
-      <div className="question-title">{props.title}</div>
+      className={`question ${opened ? "opened" : ""}`}>
+      <div className="question-title" onClick={() => setOpened(!opened)}>{props.title}</div>
       <Collapse in={opened}>
         <div className="question-body">{props.content}</div>
       </Collapse>
