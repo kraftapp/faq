@@ -13,6 +13,18 @@
     text-align: justify;
   }
 
+  .question-footer {
+    border-top: 1px solid #ddd;
+    span {
+      font-size: 12px;
+    }
+
+    .btn .icon {
+      color: #777;
+      margin-right: 5px;
+    }
+  }
+
   .question-title {
     cursor: pointer;
     padding: 10px;
@@ -34,7 +46,5 @@
         margin-bottom: 0;
       }
     }
-
   }
-
 }
