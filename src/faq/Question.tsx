@@ -18,7 +18,14 @@ export const Question = (props: IQuestion) => {
 
   return (
     <div id={props.id} className={`question ${opened ? "opened" : ""}`}>
-      <div className="question-title" onClick={() => setOpened(!opened)}>
+      <div
+        className="question-title"
+        onClick={() => setOpened(!opened)}
+        data-track-section="question"
+        data-track-action="click"
+        data-track-label="view"
+        data-track-value={props.id}
+      >
         {props.title}
       </div>
       <Collapse in={opened}>
@@ -31,7 +38,8 @@ export const Question = (props: IQuestion) => {
               <button
                 className="btn btn-light btn-sm mr-2"
                 data-track-section="question"
-                data-track-action="unhelpful"
+                data-track-action="click"
+                data-track-label="unhelpful"
                 data-track-value={props.id}
                 onClick={e => setOpened(false)}
               >
@@ -40,7 +48,8 @@ export const Question = (props: IQuestion) => {
               </button>
               <button
                 data-track-section="question"
-                data-track-action="helpful"
+                data-track-action="click"
+                data-track-label="helpful"
                 data-track-value={props.id}
                 className="btn btn-light btn-sm"
                 onClick={e => setOpened(false)}
