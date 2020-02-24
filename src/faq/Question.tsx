@@ -3,6 +3,7 @@ import { Collapse } from "react-bootstrap";
 import "./Question.scss";
 
 export interface IQuestion {
+  id: string;
   title: string;
   content: any;
   keywords?: string;
@@ -10,12 +11,15 @@ export interface IQuestion {
 }
 
 export const Question = (props: IQuestion) => {
-  const [opened, setOpened] = useState(props.opened || false);
+  const bookmarked = `#${props.id}` === window.location.hash;
+
+  const [opened, setOpened] = useState(bookmarked);
 
   return (
-    <div
-      className={`question ${opened ? "opened" : ""}`}>
-      <div className="question-title" onClick={() => setOpened(!opened)}>{props.title}</div>
+    <div id={props.id} className={`question ${opened ? "opened" : ""}`}>
+      <div className="question-title" onClick={() => setOpened(!opened)}>
+        {props.title}
+      </div>
       <Collapse in={opened}>
         <div className="question-body">{props.content}</div>
       </Collapse>

@@ -6,6 +6,7 @@ export const SettingsConfigurations: ITopic = {
   title: "⚙️ Settings & Configurations",
   questions: [
     {
+      id: "access_settings",
       title: "How can I access the settings page?",
       content:
         <React.Fragment>
@@ -21,19 +22,21 @@ export const SettingsConfigurations: ITopic = {
           </ul>
         </React.Fragment>
     },
-    {
+    {id: "change_temperature",
       title: "How can I change the temperature from Celsius to Farenheit?",
       content:
         <React.Fragment>
         </React.Fragment>
     },
     {
+      id: "change_date_format",
       title: "How can I display the date in a different format?",
       content:
         <React.Fragment>
         </React.Fragment>
     },
     {
+      id: "change_time_format",
       title: "How can I display the time in a different format?",
       content:
         <React.Fragment>

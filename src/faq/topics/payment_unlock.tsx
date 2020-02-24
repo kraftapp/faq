@@ -6,6 +6,7 @@ export const PaymentUnlockTopic: ITopic = {
   title: "💳 Purchasing & Unlocking",
   questions: [
     {
+      id: "how_purchase",
       title: "How do I purchase a clock face?",
       content: (
         <React.Fragment>
@@ -22,6 +23,7 @@ export const PaymentUnlockTopic: ITopic = {
       )
     },
     {
+      id: "bundle_purchase",
       title: "How do I purchase a bundle?",
       content: (
         <React.Fragment>
@@ -42,6 +44,7 @@ export const PaymentUnlockTopic: ITopic = {
       )
     },
     {
+      id: "already_paid",
       title: "I have already paid, do I need to purchase again?",
       content: (
         <React.Fragment>
@@ -58,6 +61,7 @@ export const PaymentUnlockTopic: ITopic = {
       )
     },
     {
+      id: "find_own_clockfaces",
       title: "How can I find which clock faces do I own?",
       content: (
         <React.Fragment>
@@ -68,6 +72,7 @@ export const PaymentUnlockTopic: ITopic = {
       )
     },
     {
+      id: "refund",
       title: "I'm not satisfied with a purchase and I want a refund!",
       content: (
         <React.Fragment>

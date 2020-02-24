@@ -6,6 +6,7 @@ export const ClockfaceErrors: ITopic = {
   title: "🕒 Clock face errors",
   questions: [
     {
+      id: "clock_error",
       title: "There is an error message \"Clock Error\" in my watch. How do I fix it?",
       content: (
         <React.Fragment>
@@ -19,6 +20,7 @@ export const ClockfaceErrors: ITopic = {
       )
     },
     {
+      id: "install_notcomplete",
       title: "The installation never completes, it just bounces back and forth.",
       content: (
         <React.Fragment>
@@ -32,6 +34,7 @@ export const ClockfaceErrors: ITopic = {
       )
     },
     {
+      id: "missing_parts",
       title: "Some parts of the clock face are missing or displaying incorrectly.",
       content: (
         <React.Fragment>
@@ -45,6 +48,7 @@ export const ClockfaceErrors: ITopic = {
       )
     },
     {
+      id: "weather_notupdating",
       title: "The weather forecast is not updating!",
       content: (
         <React.Fragment>
@@ -65,7 +69,7 @@ export const ClockfaceErrors: ITopic = {
         </React.Fragment>
       )
     },
-    {
+    {id: "access_settings_msg",
       title: "What is this \"Access the settings page in your mobile device and login using your Fitbit account to use this clockface\" message about?",
       content: (
         <React.Fragment>
@@ -90,6 +94,7 @@ export const ClockfaceErrors: ITopic = {
       )
     },
     {
+      id: "nothing_working",
       title: "None of the above works, what else can I try?",
       content: (
         <React.Fragment>
