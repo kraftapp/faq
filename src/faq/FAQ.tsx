@@ -121,7 +121,7 @@ function FAQ() {
               ))}
             {filteredTopics.length === 0 && (
               <span className="text-center">
-                Oh snap! We didn't find an answer to that. Wanna try <a href="mailto:kr4ftmail@gmail.com">contacting us</a> directly?
+                Oh snap! We didn't find an answer to that. What about searching for something else?
               </span>
             )}
           </Col>

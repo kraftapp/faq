@@ -2,3 +2,14 @@
   background: #f7f8fa;
   color: #435a6f;
 }
+
+blockquote {
+  display:block;
+  background: #eee;
+  padding: 15px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+  border-width: 0 2px;
+  border-style: solid;
+}

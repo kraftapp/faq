@@ -77,7 +77,7 @@ export const PaymentUnlockTopic: ITopic = {
       content: (
         <React.Fragment>
           <p>
-            We are deeply sorry to hear about it. If you think there's something we can do to change your mind please <a href="mailto:kr4ftmail@gmail.com">contact us</a> and we will try our best to sort whatever problems you might be facing.
+            We are deeply sorry to hear about it. If you think there's something we can do to change your mind please <a href="#contact">contact us</a> and we will try our best to sort whatever problems you might be facing.
           </p>
           <p>
             If you are decided you want to request a refund you will need to <a href="https://kiezelpay.com/faq/faq-refund" target="_blank" rel="noopener noreferrer">contact our payment provider</a> and they will handle it for you.

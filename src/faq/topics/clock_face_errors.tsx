@@ -34,6 +34,50 @@ export const ClockfaceErrors: ITopic = {
       )
     },
     {
+      id: "image_disappearing",
+      title: "My custom background image disappeared and I cannot get it back!",
+      content: (
+        <React.Fragment>
+          <p>
+            Some of our clock faces have a custom background feature which let you use your own images/pictures as the background image.
+            </p>
+          <p>
+            We did receive reports from some users that the background might disappear/turn black out of nowhere. This error seems to happen randomly and according to reports only happens if the watch runs out of battery while using the custom background.
+          </p>
+          <p>
+            If you are facing this issue try following these steps:
+          </p>
+          <ul>
+            <li>Restart your mobile phone Bluetooth (turn it off/on again);</li>
+            <li>Sync your watch with Fitbit;</li>
+            <li>Reinstall the clockface (install a different one and then install it back);</li>
+          </ul>
+        </React.Fragment>
+      )
+    },
+    {
+      id: "aod_not_working",
+      title: "The \"Always On Display\" feature is not working after updating!",
+      content: (
+        <React.Fragment>
+          <p>
+            Most our clock faces had an <strong>Always On Display</strong> feature since their first releases, which used to leverage the <a href="https://dev.fitbit.com/build/reference/device-api/display" target="_blank" rel="noopener noreferrer">display API</a> provided by Fitbit.
+            </p>
+          <p>
+            Unfortunately after the <a href="https://dev.fitbit.com/blog/2019-10-29-announcing-fitbit-os-sdk-4.0/" target="_blank" rel="noopener noreferrer">release of SDK 4.0</a> this feature is not working anymore, which can be checked at the end of the release notes:
+          </p>
+          <blockquote>
+            <p>And Finally... We already know what you're thinking, so let's take a moment to address the elephant in the room.</p>
+            <p><strong>How do I utilize the Always on Display or microphone in my clock face or application?</strong></p>
+            <p>Unfortunately the short answer is you can't at this time. The slightly longer answer is that we're still assessing the capabilities in a way that would make the most sense, so stay tuned for future updates. In the meantime, express your interest by submitting feature suggestions in the community forum!</p>
+          </blockquote>
+          <p>
+            Some of our clock faces are now enabled for <a href="https://dev.fitbit.com/blog/2019-12-19-announcing-fitbit-os-sdk-4.1/#always-on-display-api" target="_blank" rel="noopener noreferrer">built-in AOD</a> capability (only available for Versa 2) but we are continuing to deliver the previous <strong>Always On Display</strong> feature in the hope it will be enabled back again in the future.
+          </p>
+        </React.Fragment>
+      )
+    },
+    {
       id: "missing_parts",
       title: "Some parts of the clock face are missing or displaying incorrectly.",
       content: (
@@ -69,7 +113,8 @@ export const ClockfaceErrors: ITopic = {
         </React.Fragment>
       )
     },
-    {id: "access_settings_msg",
+    {
+      id: "access_settings_msg",
       title: "What is this \"Access the settings page in your mobile device and login using your Fitbit account to use this clockface\" message about?",
       content: (
         <React.Fragment>
@@ -113,7 +158,7 @@ export const ClockfaceErrors: ITopic = {
             <li>Reinstall the clockface (install a different one and then install it back);</li>
           </ul>
           <p>
-            If the steps above didn't help you, you might want to try <a href="mailto:kr4ftmail@gmail.com">contacting us</a> directly.
+            If the steps above didn't help you, you might want to try <a href="#contact">contacting us</a> directly.
           </p>
         </React.Fragment>
       )

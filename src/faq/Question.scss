@@ -15,7 +15,8 @@
 
   .question-footer {
     border-top: 1px solid #ddd;
-    span {
+    .text-muted {
+      padding: 5px 0;
       font-size: 12px;
     }
 
